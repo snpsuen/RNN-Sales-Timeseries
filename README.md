@@ -1,5 +1,5 @@
 # RNN-Sales-Timeseries
-This is a 2-stage process that uses Tensorflow and in particular the bundled Keras API to build and serve a Recurrent Neural Network (RNN) DL model to forecast about a sample time series on sales revenues.
+This is a 2-stage process that uses Tensorflow and more notably, the bundled Keras API to build and serve a Recurrent Neural Network (RNN) DL model to forecast about a sample time series on sales revenues.
 <p>
 First, run the Python script, rnn_sales_timeseries.py, provided by Dr Jason Browniee in https://machinelearningmastery.com/tensorflow-tutorial-deep-learning-with-tf-keras/ to build and evaluate an RNN DL model based on a sample of monthly car sales data points.
 <p>

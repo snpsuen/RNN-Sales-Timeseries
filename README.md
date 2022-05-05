@@ -3,7 +3,7 @@ This is a 2-stage process that uses Tensorflow and in particular the bundled Ker
 <p>
 First, run the Python script, rnn_sales_timeseries.py, provided by Dr Jason Browniee in https://machinelearningmastery.com/tensorflow-tutorial-deep-learning-with-tf-keras/ to build and evaluate an RNN DL model based on a sample of monthly car sales data points.
 <p>
-To avoid missing components or other issues in installing Tensorflow on a host system, it is suggested that the model builder script be run on a tensorflow/tensorflow container to save the model in a host-mounted volume.
+To avoid missing components or other issues in installing Tensorflow on a host system, it is suggested that the model builder script be run on a tensorflow/tensorflow container, where the model will be saved in a host-mounted volume.
 <p>
 <pre> 
 docker run -it --name tfcontainer -v /root/RNN-Sales-Timeseries:/tensorflow tensorflow/tensorflow

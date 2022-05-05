@@ -10,7 +10,7 @@ model = tf.keras.models.load_model("./rnn_sales_timeseries_model")
 def home():
     return render_template('index.html')
 
-@app.route('/prediction', methods=['GET', 'POST']))
+@app.route('/prediction', methods=['GET', 'POST'])
 def prediction():
   if request.method == 'POST':
     month01 = request.form.get('month01')

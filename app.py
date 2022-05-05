@@ -22,4 +22,4 @@ def prediction():
     n_steps = 5
     row = asarray([month01, month02, month03, month04, month05]).reshape((1, n_steps, 1))
     yhat = model.predict(row)
-	return render_template('result.html', result=yhat)
+    return render_template('result.html', result=yhat)

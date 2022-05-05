@@ -7,8 +7,10 @@ To avoid missing components or other issues in installing Tensorflow on a host s
 <p>
 <pre> 
 docker run -it --name tfcontainer -v /root/RNN-Sales-Timeseries:/tensorflow tensorflow/tensorflow
+pip install --upgrade numpy pandas
 cd /tensorflow
 python3 rnn_sales_timeseries.py
+exit
 </pre>
 The model is consequently saved in /root/RNN-Sales-Timeseries/rnn_sales_timeseries_model on the host itself.
 <p>

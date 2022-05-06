@@ -12,7 +12,7 @@ cd /tensorflow
 python3 rnn_sales_timeseries.py
 exit
 </pre>
-COnsequently, the model is saved in the sub-directory /root/RNN-Sales-Timeseries/rnn_sales_timeseries_model on the host itself.
+Consequently, the model is saved in the sub-directory /root/RNN-Sales-Timeseries/rnn_sales_timeseries_model on the host itself.
 <p>
 <p>
 After that, deploy a tensorflow container to load and serve the model by predicting the sales revenues of a particular month based on the past 5 months, e.g.

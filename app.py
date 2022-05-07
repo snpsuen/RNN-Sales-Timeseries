@@ -15,7 +15,7 @@ def prediction():
   if request.method == 'POST':
     n_steps = 5
     past=[]
-    for in range(1, 6)
+    for in range(1, n_steps + 1):
       month = "month0" + str(i)
       result = float(request.form.get(month))
       past.append(result)

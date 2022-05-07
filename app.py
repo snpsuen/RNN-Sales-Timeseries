@@ -14,12 +14,12 @@ def home():
 def prediction():
   if request.method == 'POST':
     n_steps = 5
-	past=[]
+    past=[]
     for in range(1, 6)
-	  month = "month0" + str(i)
-	  result = float(request.form.get(month))
-	  past.append(result)
-  
+      month = "month0" + str(i)
+      result = float(request.form.get(month))
+      past.append(result)
+
     row = asarray(past).reshape((1, n_steps, 1))
     yhat = model.predict(row)
-	return render_template('result.html', result=yhat)
+    return render_template('result.html', result=yhat)

@@ -12,6 +12,11 @@ cd /tensorflow
 python3 rnn_sales_timeseries.py
 exit
 </pre>
+Alternative, you may run all the commands in one go in the tensorflow container on this one-liner:
+<p>
+<pre> 
+docker run --name tfcontainer -v /root/RNN-Sales-Timeseries:/tensorflow tensorflow/tensorflow /bin/bash -c "pip install --upgrade numpy pandas; cd /tensorflow; python3 rnn_sales_timeseries.py"
+</pre>
 Consequently, the model is saved in the sub-directory /root/RNN-Sales-Timeseries/rnn_sales_timeseries_model on the host itself.
 <p>
 <p>

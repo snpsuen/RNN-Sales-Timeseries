@@ -12,7 +12,7 @@ cd /tensorflow
 python3 rnn_sales_timeseries.py
 exit
 </pre>
-Alternatively, you may run all the commands in one go in the tensorflow container on this one-liner:
+Alternatively, you may run all the commands in one go in a tensorflow container on this one-liner:
 <p>
 <pre> 
 docker run --name tfcontainer -v /root/RNN-Sales-Timeseries:/tensorflow tensorflow/tensorflow /bin/bash -c "pip install --upgrade numpy pandas; cd /tensorflow; python3 rnn_sales_timeseries.py"
